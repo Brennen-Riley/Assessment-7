@@ -1,0 +1,9 @@
+extraLargeArray: insert = 857.6821 ms  append = 2.7335 ms
+tinyArray: insert = 35.7 μs  append = 101.4 μs
+smallArray: insert = 46.6 μs  append = 83.9 μs
+mediumArray: insert = 191 μs  append = 149 μs
+largeArray: insert = 9.1183 ms  append = 680.4 μs
+
+
+It appears that for the smaller arrays that the insert function worked faster. But for the larger arrays the append function worked faster.
+I belive this is due to the append function not having to go through all overwrite the previous array. So it's faster for the larger arrays. But with the smaller one it works quicker because it's accessing smaller arrays so it doesn't have to go through a bunch of numbers.
